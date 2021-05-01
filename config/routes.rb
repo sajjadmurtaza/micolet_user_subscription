@@ -3,5 +3,5 @@
 Rails.application.routes.draw do
   root 'newsletter_preferences#new'
 
-  resources :newsletter_preferences, only: %i[new create index]
+  resources :newsletter_preferences, only: %i[new create]
 end

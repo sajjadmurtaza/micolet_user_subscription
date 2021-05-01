@@ -30,4 +30,13 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  company: 'Micolet'
+  company_slogan: "Almost new fashion with gurantee"
+
+  welcome_message: "Welcome! Soon we will launch our site in this country."
+  subscribe_message: "Subscribe to receive our newsletter"
+
+  email: "Email"
+  children_fashion: "Children's Fashion"
+  men_fashion: "Men's Fashion"
+  women_fashion: "women's Fashion"
