@@ -1,24 +1,40 @@
-# README
+### Micolet newsletter subscription
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+===================
 
-Things you may want to cover:
+This small application is use to store newsletter preferences.
+And on successful subscribe an email being sent to user.
 
-* Ruby version
+Use Internationalization (I18n) API: For now just using en.yml
 
-* System dependencies
+## Dependencies
 
-* Configuration
+- Ruby 3.0.0
+- Rails 6.1.3
+- sqlite3
+- RSpec
+- Letter opener(Preview email in the default browser.)
 
-* Database creation
+Guidelines
+===============
 
-* Database initialization
+#### Model
+ - NewsletterPreference model: is use to validate the email, email quality score and make sure at least one preference has been selected
 
-* How to run the test suite
+#### Controller
+ - NewsletterPreferencesController to create newsletter preference
 
-* Services (job queues, cache servers, search engines, etc.)
+ #### Mailer
+  - send email(using Letter opener)
 
-* Deployment instructions
+ #### EmailValidation
+  - Get email quality score using abstractapi
 
-* ...
+
+  #### Tests
+
+    To run the test suite type:
+
+    ```
+    $ bundle exec rspec
+    ```
